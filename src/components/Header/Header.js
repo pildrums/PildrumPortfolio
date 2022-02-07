@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ReactComponent as Logo } from 'logo.svg';
-import { FaGithub } from "react-icons/fa";
-import { MdWeb } from "react-icons/md";
-
+import Menu from "./Menu";
+import SubMenu from "./SubMenu";
 
 const Header = () => {
   return (
@@ -11,18 +10,8 @@ const Header = () => {
       <HeaderWrapper>
         <HeaderContainer>
           <MainLogo />
-          <HeaderMenu>
-            <MainMenu>
-              <li>Home</li>
-              <li>About</li>
-              <li>Project</li>
-              <li>Contact</li>
-            </MainMenu>
-          </HeaderMenu>
-          <HeaderSubMenu>
-            <li><FaGithub /></li>
-            <li><MdWeb /></li>
-          </HeaderSubMenu>
+          <Menu />
+          <SubMenu />
         </HeaderContainer>
       </HeaderWrapper>
       <Space />
@@ -52,45 +41,7 @@ const HeaderContainer = styled.div`
 `;
 
 const MainLogo = styled(Logo)`
-    width: 120px;
-    margin-top: 8px;
-`;
-
-const HeaderMenu = styled.nav`
-  display: flex;
-  justify-content: center;
-`;
-
-const MainMenu = styled.ul`
-  display: flex;
-  li {
-    margin: 0 20px;
-    padding: 16px 40px;
-    background: #fff;
-    color: #333;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    box-shadow: 1px 8px 12px rgba(0, 0, 0, 0.3);
-    user-select: none;
-    cursor: pointer;
-  }
-`;
-
-const HeaderSubMenu = styled.ul`
-  display: flex;
-  align-items: center;
-  li {
-    font-size: 32px;
-    color: #707070;
-    transition: all 0.3s ease;
-    &:last-child {
-      margin-left: 1rem;
-    }
-    &:hover {
-      color: #333;
-    }
-  }
+  width: 120px;
 `;
 
 const Space = styled.div`
