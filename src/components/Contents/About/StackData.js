@@ -14,9 +14,6 @@ const StyledJs = styled(SiJavascript)`
 const StyledReact = styled(FaReact)`
   color: cyan;
 `;
-const StyledVue = styled(FaVuejs)`
-  color: lightgreen;
-`;
 const StyledNextjs = styled(SiNextdotjs)`
   color: #707070;
 `;
@@ -25,9 +22,6 @@ const StyledSass = styled(FaSass)`
 `;
 const StyledSC = styled(SiStyledcomponents)`
   color: orangered;
-`;
-const StyledRedux = styled(SiRedux)`
-  color: violet;
 `;
 
 const STACK = [
@@ -53,28 +47,18 @@ const STACK = [
   },
   {
     id: 5,
-    text: 'Vue.JS',
-    component: <StyledVue />
-  },
-  {
-    id: 6,
     text: 'Next.JS',
     component: <StyledNextjs />
   },
   {
-    id: 7,
+    id: 6,
     text: 'SASS / SCSS',
     component: <StyledSass />
   },
   {
-    id: 8,
+    id: 7,
     text: 'Styled-Components',
     component: <StyledSC />
-  },
-  {
-    id: 9,
-    text: 'Redux',
-    component: <StyledRedux />
   },
 ];
 

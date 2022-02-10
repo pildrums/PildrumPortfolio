@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { ReactComponent as Logo } from 'logo.svg';
 import Menu from "./Menu";
 import SubMenu from "./SubMenu";
 
 const Header = () => {
+  const [viewport, setViewport] = useState(window.innerWidth);
+  const breakPoint = 820;
+  useEffect(() => {
+    return window.addEventListener("resize", () => setViewport(window.innerWidth));
+  }, []);
+
   return (
     <>
       <HeaderWrapper>
         <HeaderContainer>
           <MainLogo />
-          <Menu />
+          {viewport > breakPoint && <Menu />}
           <SubMenu />
         </HeaderContainer>
       </HeaderWrapper>

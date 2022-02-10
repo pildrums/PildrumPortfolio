@@ -53,11 +53,15 @@ const TimelineItem = styled.div`
   align-items: center;
   margin-bottom: 20px;
   h2 {
+    font-size: 1.125rem;
     border-bottom: 1px solid #ccc;
     padding: 8px 0;
   }
   p {
     padding: 8px 0;
+  }
+  @media all and (max-width: 800px) {
+    flex-direction: column;
   }
 `;
 
@@ -68,7 +72,6 @@ const Time = styled.p`
 
 const TimelineContent = styled.div`
   width: 400px;
-  max-width: 800px;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -77,6 +80,9 @@ const TimelineContent = styled.div`
   margin-left: 20px;
   border-radius: 16px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  @media all and (max-width: 800px) {
+    width: 300px;
+  }
 `;
 
 export default Timeline;

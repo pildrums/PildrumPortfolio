@@ -1,19 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
-import Content from '../Content';
-import Timeline from "./Timeline";
-import Stack from "./Stack";
+import Timeline from "components/Contents/About/Timeline";
+import Stack from "components/Contents/About/Stack";
 
 const About = () => {
   return (
-    <Content>
+    <AboutWrapper>
       <AboutContainer>
         <Timeline />
         <Stack />
       </AboutContainer>
-    </Content>
+    </AboutWrapper>
   );
 };
+
+const AboutWrapper = styled.section`
+  width: 100%;
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const AboutContainer = styled.div`
   width: 1320px;
