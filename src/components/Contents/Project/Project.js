@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from 'components/Button/Button';
 import { PROJECT } from "components/Contents/Project/ProjectData";
 
 const Project = () => {
@@ -13,9 +14,8 @@ const Project = () => {
               <h2>{item.title}</h2>
               <p>{item.stack}</p>
               <ButtonWrapper>
-                {/* 추후 버튼 컴포넌트 제작 예정 */}
-                <a href={item.git}>Github</a>
-                <a href={item.url}>GoTo</a>
+                <Button href={item.git}>Github</Button>
+                <Button href={item.url}>GoTo</Button>
               </ButtonWrapper>
             </ProjectItem>
           ))}

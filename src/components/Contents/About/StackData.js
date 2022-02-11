@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaVuejs } from 'react-icons/fa';
-import { SiJavascript, SiNextdotjs, SiStyledcomponents, SiRedux } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaReact, FaSass } from 'react-icons/fa';
+import { SiJavascript, SiNextdotjs, SiStyledcomponents } from 'react-icons/si';
 
 const StyledHtml = styled(FaHtml5)`
   color: orange;
@@ -62,4 +62,4 @@ const STACK = [
   },
 ];
 
-export default STACK;
+export { STACK };

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import STACK from 'components/Contents/About/StackData';
+import { STACK } from 'components/Contents/About/StackData';
 
 const Stack = () => {
   return (
