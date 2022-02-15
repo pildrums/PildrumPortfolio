@@ -1,13 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import Timeline from "components/Contents/About/Timeline";
 import Stack from "components/Contents/About/Stack";
 
 const About = () => {
   return (
     <AboutWrapper>
       <AboutContainer>
-        <Timeline />
         <Stack />
       </AboutContainer>
     </AboutWrapper>

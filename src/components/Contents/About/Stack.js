@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { STACK } from 'components/Contents/About/StackData';
+import ProgressBar from "components/ProgressBar/ProgressBar";
 
 const Stack = () => {
   return (
@@ -11,6 +12,7 @@ const Stack = () => {
           <StackItem key={stack.id}>
             <h2>{stack.text}</h2>
             {stack.component}
+            <ProgressBar value={stack.value} />
           </StackItem>
         ))}
       </StackContainer>
@@ -21,7 +23,6 @@ const Stack = () => {
 const StackWrapper = styled.div`
   h1 {
     text-align: center;
-    border-top: 1px solid #000;
     padding-top: 40px;
   }
 `;
@@ -33,7 +34,7 @@ const StackWrapper = styled.div`
 const StackContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   gap: 20px 20px;
   justify-content: space-between;
   margin: 40px 0;
@@ -48,14 +49,13 @@ const StackContainer = styled.div`
 `;
 
 const StackItem = styled.div`
-  width: 200px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
   background: #fff;
-  margin: 16px 24px;
   border-radius: 16px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   transition: all 250ms linear;

@@ -1,25 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from 'components/Button/Button';
-import { PROJECT } from "components/Contents/Project/ProjectData";
+import ProjectList from "components/Contents/Project/ProjectList";
 
 const Project = () => {
   return (
     <ProjectWrapper>
       <ProjectContainer>
-        <h2>Project</h2>
-        <ProjectList>
-          {PROJECT.map(item => (
-            <ProjectItem key={item.id}>
-              <h2>{item.title}</h2>
-              <p>{item.stack}</p>
-              <ButtonWrapper>
-                <Button href={item.git}>Github</Button>
-                <Button href={item.url}>GoTo</Button>
-              </ButtonWrapper>
-            </ProjectItem>
-          ))}
-        </ProjectList>
+        <ProjectList />
       </ProjectContainer>
     </ProjectWrapper>
   );
@@ -35,42 +22,11 @@ const ProjectWrapper = styled.section`
 
 const ProjectContainer = styled.div`
   width: 1320px;
-  background: #aaf;
-`;
-
-const ProjectList = styled.div`
-  width: inherit;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  .ProjectItem {
-    width: 400px;
-    height: 200px;
-    background: coral;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  }
-`;
-
-const ProjectItem = styled.div`
-    width: 400px;
-    height: 200px;
-    background: coral;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-`;
-
-const ButtonWrapper = styled.div`
-  display: flex;
-  a {
-    margin: 0 8px;
-  }
+  flex-direction: column;
+  align-items: center;
+  /* background: #aaf; */
+  padding: 40px 0;
 `;
 
 export default Project;

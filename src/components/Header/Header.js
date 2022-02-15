@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { ReactComponent as Logo } from 'logo.svg';
-import Menu from "./Menu";
-import SubMenu from "./SubMenu";
+import Menu from "components/Header/Menu";
+import SubMenu from "components/Header/SubMenu";
 
 const Header = () => {
   const [viewport, setViewport] = useState(window.innerWidth);
@@ -35,6 +35,7 @@ const HeaderWrapper = styled.header`
   padding: 0 1.25rem;
   position: fixed;
   top: 0;
+  z-index: 9999;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
 `;
 

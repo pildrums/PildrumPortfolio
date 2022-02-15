@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { FaHtml5, FaCss3Alt, FaReact, FaSass } from 'react-icons/fa';
 import { SiJavascript, SiNextdotjs, SiStyledcomponents } from 'react-icons/si';
 
+// 컬러 수정 예정
 const StyledHtml = styled(FaHtml5)`
   color: orange;
 `;
@@ -28,37 +29,44 @@ const STACK = [
   {
     id: 1,
     text: 'HTML5',
-    component: <StyledHtml />
+    component: <StyledHtml />,
+    value: 80,
   },
   {
     id: 2,
     text: 'CSS3',
-    component: <StyledCss />
+    component: <StyledCss />,
+    value: 80,
   },
   {
     id: 3,
     text: 'JS (ES6+)',
-    component: <StyledJs />
+    component: <StyledJs />,
+    value: 70,
   },
   {
     id: 4,
     text: 'React.JS',
-    component: <StyledReact />
+    component: <StyledReact />,
+    value: 65,
   },
   {
     id: 5,
     text: 'Next.JS',
-    component: <StyledNextjs />
+    component: <StyledNextjs />,
+    value: 60,
   },
   {
     id: 6,
     text: 'SASS / SCSS',
-    component: <StyledSass />
+    component: <StyledSass />,
+    value: 60,
   },
   {
     id: 7,
     text: 'Styled-Components',
-    component: <StyledSC />
+    component: <StyledSC />,
+    value: 50
   },
 ];
 

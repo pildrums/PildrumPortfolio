@@ -2,42 +2,42 @@ const PROJECT = [
   {
     id: 1,
     title: 'not yet',
-    stack: 'HTML / CSS / JS',
-    git: '',
+    stack: 'HTML / CSS / ECMA Script',
+    git: 'http://www.google.com',
     url: ''
   },
   {
     id: 2,
     title: 'not yet',
-    stack: 'HTML / CSS / JS',
+    stack: 'HTML / CSS / ECMA Script',
     git: '',
     url: ''
   },
   {
     id: 3,
-    title: '일정 관리 앱',
-    stack: 'React.js',
+    title: 'not yet',
+    stack: 'React.js / SCSS',
     git: '',
     url: ''
   },
   {
     id: 4,
-    title: '퀴즈 앱',
-    stack: 'React.js',
+    title: 'not yet',
+    stack: 'React.js / Styled-Components',
     git: '',
     url: ''
   },
   {
     id: 5,
-    title: '영화 정보 앱',
-    stack: 'Next.js',
+    title: 'not yet',
+    stack: 'Next.js / Styled-Components',
     git: '',
     url: ''
   },
   {
     id: 6,
     title: '맥도날드',
-    stack: 'React.js',
+    stack: 'Next.js / Styled-Components',
     git: '',
     url: ''
   },

@@ -14,7 +14,6 @@ const Home = () => {
 const HomeWrapper = styled.section`
   width: 100%;
   padding: 0 1.25rem;
-  /* background: coral; */
   display: flex;
   justify-content: center;
   align-items: center;
