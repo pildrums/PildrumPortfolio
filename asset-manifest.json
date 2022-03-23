@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PildrumPortfolio/static/css/main.27aa9e56.css",
+    "main.js": "/PildrumPortfolio/static/js/main.13c503c0.js",
+    "static/media/logo.svg": "/PildrumPortfolio/static/media/logo.37838c0fc683f79773de2801ff117576.svg",
+    "index.html": "/PildrumPortfolio/index.html",
+    "main.27aa9e56.css.map": "/PildrumPortfolio/static/css/main.27aa9e56.css.map",
+    "main.13c503c0.js.map": "/PildrumPortfolio/static/js/main.13c503c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27aa9e56.css",
+    "static/js/main.13c503c0.js"
+  ]
+}
