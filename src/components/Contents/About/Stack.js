@@ -65,7 +65,7 @@ const StackItem = styled.div`
   }
   &:hover {
     box-shadow: none;
-    background: #eee;
+    /* background: #eee; */
   }
   h2 {
     font-size: 18px;
