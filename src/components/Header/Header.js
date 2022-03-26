@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { ReactComponent as Logo } from 'logo.svg';
-import Menu from "components/Header/Menu";
+// import Menu from "components/Header/Menu";
 import SubMenu from "components/Header/SubMenu";
 import { MdOutlineVerticalAlignTop } from "react-icons/md";
 
 
 
 const Header = () => {
-  const [viewport, setViewport] = useState(window.innerWidth);
-  const breakPoint = 820;
-  useEffect(() => {
-    return window.addEventListener("resize", () => setViewport(window.innerWidth));
-  }, []);
+  // const [viewport, setViewport] = useState(window.innerWidth);
+  // const breakPoint = 820;
+  // useEffect(() => {
+  //   return window.addEventListener("resize", () => setViewport(window.innerWidth));
+  // }, []);
 
   const onTop = () => {
     const top = document.documentElement.scrollTop || document.body.scrollTop;
@@ -27,7 +27,7 @@ const Header = () => {
       <HeaderWrapper>
         <HeaderContainer>
           <MainLogo />
-          {viewport > breakPoint && <Menu />}
+          {/* {viewport > breakPoint && <Menu />} */}
           <SubMenu />
         </HeaderContainer>
       </HeaderWrapper>

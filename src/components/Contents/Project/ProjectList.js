@@ -11,6 +11,7 @@ const ProjectList = () => {
         {PROJECT.map(item => (
           <ProjectItem key={item.id}>
             <ProjectImage>
+              <img src={item.img} alt="" />
               <ButtonWrapper className='active'>
                 <Button color="#afa" hover="#aaf" onClick={() => window.open(item.git)}>Github</Button>
                 <Button color="#ffa" hover="#faf" onClick={() => window.open(item.url)}>GoTo</Button>
@@ -32,7 +33,7 @@ const Title = styled.h2`
 
 const ProjectListWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 20px 20px;
   justify-content: space-between;
@@ -53,11 +54,15 @@ const ProjectItem = styled.div`
 const ProjectImage = styled.div`
   width: 300px;
   height: 200px;
-  background: #333;
   transition: all 200ms linear;
   display: flex;
   justify-content: center;
   align-items: center;
+  img {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+  }
   &:hover {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     .active {
@@ -78,6 +83,7 @@ const ItemStack = styled.p`
 const ButtonWrapper = styled.div`
   display: flex;
   opacity: 0;
+  position: absolute;
   a {
     margin: 0 8px;
   }

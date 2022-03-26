@@ -18,11 +18,14 @@ const AboutWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  
 `;
 
 const AboutContainer = styled.div`
   width: 1320px;
-  background: #ffa;
+  border-radius: 20px;
+  box-shadow: 6px 0px 6px 4px rgba(0, 0, 0, 0.2);
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;

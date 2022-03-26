@@ -59,7 +59,7 @@ const StackItem = styled.div`
   border-radius: 16px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   transition: all 250ms linear;
-  cursor: pointer;
+  /* cursor: pointer; */
   @media all and (min-width: 320px) and (max-width: 800px) {
     width: 180px;
   }
