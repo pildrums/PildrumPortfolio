@@ -5,7 +5,7 @@ const PROJECT = [
     stack: 'HTML / CSS / ECMA Script',
     git: 'https://github.com/pildrums/PaintJS',
     url: 'https://pildrums.github.io/PaintJS/',
-    img: 'img/PaintJS.png'
+    img: 'img/PaintJS.png',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const PROJECT = [
     stack: 'React.js / Styled-Components',
     git: 'https://github.com/pildrums/Calcula',
     url: 'https://pildrums.github.io/Calcula/',
-    img: ''
+    img: 'img/Calcula.png',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const PROJECT = [
     stack: 'React.js / Styled-Components',
     git: 'https://github.com/pildrums/pilquizOnTheBlock',
     url: 'https://pildrums.github.io/pilquizOnTheBlock/',
-    img: ''
+    img: 'img/pilquiz.png',
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const PROJECT = [
     stack: 'React.js / Styled-Components',
     git: 'https://github.com/pildrums/mcDonalds',
     url: 'https://pildrums.github.io/mcDonalds/',
-    img: ''
+    img: 'img/mcdonald.png',
   },
 ];
 
