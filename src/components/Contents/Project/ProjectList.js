@@ -14,7 +14,7 @@ const ProjectList = () => {
               <img src={item.img} alt="" />
               <ButtonWrapper className='active'>
                 <Button color="#afa" hover="#aaf" onClick={() => window.open(item.git)}>Github</Button>
-                <Button color="#ffa" hover="#faf" onClick={() => window.open(item.url)}>GoTo</Button>
+                <Button color="#ffa" hover="#faf" onClick={() => window.open(item.url)}>홈페이지</Button>
               </ButtonWrapper>
             </ProjectImage>
             <ItemTitle>{item.title}</ItemTitle>
